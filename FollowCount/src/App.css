@@ -1,0 +1,104 @@
+body{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  border: 1px solid white;
+  background-color: rgb(132, 132, 128);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  padding: 8px 15px;
+}
+
+.otrbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+}
+
+.topbar img {
+  height: 15px;
+  width: 15px;
+}
+
+.profileimg {
+  background-color: white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.container .otrbox:nth-child(2) {
+  margin-top: 10px;
+}
+
+.populer {
+  display: flex;
+  gap: 10px;
+  
+  text-align: center;
+}
+
+.populer div p {
+  font-size: 12px;
+}
+
+.populer div h6 {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.description {
+  margin-top: 5px;
+  display: inline;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.otrbox button {
+  width: 43%;
+  border: none;
+  margin-top: 10px;
+
+}
+
+.follow {
+  background-color: rgb(83, 83, 211);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.msg {
+  background-color: #222;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 2px;
+  border: 2px solid #222;
+  cursor: pointer;
+}
+
+.icon .iconinr {
+  height: 15px;
+  width: 20px;
+}
