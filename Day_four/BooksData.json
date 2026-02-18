@@ -1,0 +1,91 @@
+{
+  "fiction": [
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "JK Rowling",
+      "year": 1997,
+      "price": 499,
+      "img": "https://m.media-amazon.com/images/I/51UoqRAxwEL.jpg"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "JK Rowling",
+      "year": 1998,
+      "price": 599,
+      "img": "https://m.media-amazon.com/images/I/51TA3VfN8RL.jpg"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "year": 1993,
+      "price": 300,
+      "img": "https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
+    },
+    {
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "year": 2012,
+      "price": 999,
+      "img": "https://m.media-amazon.com/images/I/817tHNcyAgL.jpg"
+    },
+    {
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "year": 1902,
+      "price": 1199,
+      "img": "https://m.media-amazon.com/images/I/71KilybDOoL.jpg"
+    },
+    {
+      "title": "A Study in Scarlet",
+      "author": "Arthur Conan Doyle",
+      "year": 1887,
+      "price": 629,
+      "img": "https://m.media-amazon.com/images/I/91+anJ+r6RL._UF1000,1000_QL80_.jpg"
+    }
+  ],
+  "nonfiction": [
+    {
+      "title": "Eat That Frog",
+      "author": "Brian Tracy",
+      "year": 2001,
+      "price": 199,
+      "img": "https://www.asianefficiency.com/wp-content/uploads/2012/03/eat-that-frog.jpg"
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "year": 2012,
+      "price": 599,
+      "img": "https://m.media-amazon.com/images/I/81wgcld4wxL.jpg"
+    },
+    {
+      "title": "Mindset",
+      "author": "Carol Dweck",
+      "year": 2006,
+      "price": 499,
+      "img": "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg"
+    },
+    {
+      "title": "Drive",
+      "author": "Daniel Pink",
+      "year": 2009,
+      "price": 399,
+      "img": "https://m.media-amazon.com/images/I/71QUhm-AnIL.jpg"
+    },
+    {
+      "title": "The 4-Hour Work Week",
+      "author": "Tim Ferriss",
+      "year": 2007,
+      "price": 449,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/The_4-Hour_Workweek_%28front_cover%29.jpg/220px-The_4-Hour_Workweek_%28front_cover%29.jpg"
+
+    },
+    {
+      "title": "Who Moved My Cheese?",
+      "author": "Spencer Johnson",
+      "year": 1998,
+      "price": 99,
+      "img": "https://m.media-amazon.com/images/I/51B7XojAOJL.jpg"
+    }
+  ]
+}
