@@ -11,7 +11,7 @@ function App() {
   fetch(`http://localhost:3000/${isFiction ? "fiction" : "nonfiction"}`)
     .then(res => res.json())
     .then(data => {
-      console.log("Fetched Data:", data);
+      console.log("Fetched Data:", data);r
       setBooks(data);
     });
 }, [isFiction]);

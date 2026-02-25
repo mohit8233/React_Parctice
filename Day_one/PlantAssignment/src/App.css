@@ -1,70 +1,65 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
- 
   font-family: Arial, sans-serif;
   background-color: #a8c89f;
   display: flex;
+  height: 100vh;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
-.container{
-    /* border: 2px solid black; */
-    width: 700px;
-    height: 400px;
- background-color: white;
-}
-.app {
-  padding: 40px;
+.container {
+  width: 700px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.box
- {
-
-  padding: 10px;
+.box {
+  padding: 12px 15px;
   display: flex;
   align-items: center;
-  height: 40px;
   border-bottom: 1px solid black;
- 
   justify-content: space-between;
   color: gray;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
 .back {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .heart {
   cursor: pointer;
 }
+
 .card {
-   height: 250px;
   display: flex;
-  
+ 
 }
+
 
 .left {
   width: 50%;
-  height: 100%;
   padding: 40px;
   display: flex;
-  border-right: 1px solid black;
   justify-content: center;
   align-items: center;
+  border-right: 1px solid black; 
 }
 
 .left img {
-  width: 200px;
+  width: 220px;
+  max-width: 100%;
 }
+
 
 .right {
   width: 50%;
@@ -72,36 +67,44 @@ body {
 }
 
 .right h2 {
-  margin: 0;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .sub {
   font-size: 12px;
   color: gray;
+  margin-bottom: 10px;
 }
 
 .right h3 {
-  margin-top: 10px;
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .desc {
   font-size: 14px;
   color: gray;
-  margin-top: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
+
 .buttons {
-  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 button {
   padding: 10px 20px;
-  margin-right: 10px;
   border: 1px solid gray;
   background: white;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #f4f4f4;
 }
 
 .cart {

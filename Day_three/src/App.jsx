@@ -7,7 +7,7 @@ const App = () => {
 
   function fetchData() {
     setLoading(true);
-
+    
     fetch(`http://localhost:3000/product?_page=${page}&_limit=5`)
       .then((res) => res.json())
       .then((data) => {
