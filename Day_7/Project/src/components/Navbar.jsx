@@ -48,7 +48,8 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold text-yellow-400">
           MyStore
         </h1>
-
+      
+  
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 items-center">
           <NavLink to="/" className={navLinkStyle}>Home</NavLink>

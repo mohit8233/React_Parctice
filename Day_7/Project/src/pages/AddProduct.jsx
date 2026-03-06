@@ -42,7 +42,7 @@ const AddProduct = () => {
       })
         .then(() => {
           alert("Product Updated ✅");
-          navigate("/product");
+          navigate("/products");
         });
     } else {
       // ✅ ADD

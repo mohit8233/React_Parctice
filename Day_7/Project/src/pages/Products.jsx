@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { useNavigate } from "react-router-dom";
-
+import { auth } from "../firebase";
+import { onAuthStateChanged } from "firebase/auth";
 
 import { useEffect, useState } from "react";
 
@@ -12,7 +13,15 @@ const Products = () => {
   const [totalProducts, setTotalProducts] = useState(0);
     const productsPerPage = 4;
    const navigate = useNavigate();
+const [user, setUser] = useState(null);
 
+useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+
+  return () => unsubscribe();
+}, []);
     
 
 
@@ -33,15 +42,21 @@ const Products = () => {
 
 const totalPages = Math.ceil(totalProducts/ productsPerPage);
 
-const handleDelete = (id) =>{
-    fetch(`http://localhost:3000/products/${id}`,{
-      method : "DELETE"
-    })
-    .then(()=>{
-      setProduct(product.filter(item => item.id !== id));
-    });
-}
+const handleDelete = (id) => {
 
+  if (!user) {
+    alert("Please Login First 🔒");
+    navigate("/login");
+    return;
+  }
+
+  fetch(`http://localhost:3000/products/${id}`, {
+    method: "DELETE"
+  })
+  .then(() => {
+    setProduct(product.filter(item => item.id !== id));
+  });
+};
 
 
 
@@ -82,8 +97,15 @@ const handleDelete = (id) =>{
               ⭐ {el.rating?.rate} ({el.rating?.count})
             </p>
              <div className='flex gap-8 mt-4'>
-               <button
-  onClick={() => navigate(`/editproducts/${el.id}`)}
+              <button
+  onClick={() => {
+    if (!user) {
+      alert("Login Required 🔒");
+      navigate("/login");
+      return;
+    }
+    navigate(`/editproducts/${el.id}`);
+  }}
   className="px-3 py-1 bg-blue-500 text-white rounded"
 >
   Update
