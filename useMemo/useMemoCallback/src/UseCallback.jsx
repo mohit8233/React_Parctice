@@ -77,9 +77,6 @@ const UseCallback = () => {
         >
           Add Task
         </button>
-
-      
-
         <button
           onClick={handleTheme}
           className="bg-green-500 text-white py-2 rounded"
